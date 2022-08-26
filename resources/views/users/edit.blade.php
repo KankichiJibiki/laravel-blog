@@ -45,7 +45,7 @@
                         </div>
                     @endif
                 </div>
-                <div class="row">
+                <div class="row mb-3">
                     <div class="col">
                         <input type="file" name="avatar" id="avatar" class="form-control">
                     </div>
@@ -56,9 +56,13 @@
                 @enderror
             </div>
             {{-- btn --}}
-            <div>
-                <a href="/users/{{Auth::id()}}" class="btn btn-outline-dark">Back</a>
-                <button type="submit" class="btn btn-outline-success">Update</button>
+            <div class="row">
+                <div class="col">
+                    <a href="/users/{{Auth::id()}}" class="btn btn-outline-dark d-grid">Back</a>
+                </div>
+                <div class="col">
+                    <button type="submit" class="btn btn-outline-success w-100">Update</button>
+                </div>
             </div>
         </div>
     </form>
